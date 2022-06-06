@@ -16,7 +16,7 @@ function getRandomCharacter() {
 
 function getPassword() {
     let password = ""
-    for (let i = 0; i < 16; i ++) {
+    for (let i = 0; i < length; i ++) {
         password += getRandomCharacter()
     }
     return password
@@ -28,3 +28,7 @@ function generatePassword() {
     password3El.textContent = getPassword()
     password4El.textContent = getPassword()
 }
+
+let name = window.prompt("What is your name?")
+let length = Number(window.prompt(`Hey ${name}, How long do you want your passwords to be?`))
+alert("CLick on the green button to generate your buttons.")
